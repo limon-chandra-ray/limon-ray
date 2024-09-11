@@ -1,5 +1,5 @@
 export default function page(){
-    return <div>
-        
-    </div>
+    return <main className="w-full">
+    <div>Contact</div>
+</main>
 }

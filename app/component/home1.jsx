@@ -1,5 +1,5 @@
 "use client";
-import { Facebook, FacebookOutlined, FacebookSharp, GitHub, LinkedIn, Twitter } from "@mui/icons-material";
+import { Facebook, GitHub, LinkedIn, Twitter } from "@mui/icons-material";
 import Link from "next/link";
 import logo from "@/public/limon.png";
 import Image from "next/image";
