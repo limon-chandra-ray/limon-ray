@@ -18,16 +18,16 @@ export default function HomeTop(){
                     </div>
                     <div className="flex gap-x-2 mt-4">
                         <Link href="https://www.facebook.com/limon.limon.9634340/" target="_blank">
-                            <Facebook className="w-[40px] h-[40px] hover:text-[#0b48cc]"/>
+                            <Facebook width={40} height={40} className="w-[40px] h-[40px] hover:text-[#0b48cc]"/>
                         </Link>
                         <Link href="https://www.linkedin.com/in/limon-roy-910b44197/" target="_blank">
-                            <LinkedIn className="w-[40px] h-[40px] hover:text-[#0077b5]"/>
+                            <LinkedIn width={40} height={40} className="w-[40px] h-[40px] hover:text-[#0077b5]"/>
                         </Link>
                         <Link href="https://github.com/limon-chandra-ray" target="_blank">
-                            <GitHub className="w-[40px] h-[40px] hover:text-[#3b8f96]"/>
+                            <GitHub width={40} height={40} className="w-[40px] h-[40px] hover:text-[#3b8f96]"/>
                         </Link>
                         <Link href="" target="_blank">
-                            <Twitter className="w-[40px] h-[40px] hover:text-[#1da1f2]"/>
+                            <Twitter width={40} height={40} className="w-[40px] h-[40px] hover:text-[#1da1f2]"/>
                         </Link>
                         
                     </div>
