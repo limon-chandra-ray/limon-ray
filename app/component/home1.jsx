@@ -9,7 +9,7 @@ export default function HomeTop(){
             <div className="grid grid-cols-2 items-center">
                 <div className="pl-5">
                     <div>
-                        <div className="text-[4rem] font-bold text-black">I'm Limon</div>
+                        <div className="text-[4rem] font-bold text-black">I&lsquo;m Limon</div>
                         <div className="text-[1.5rem] font-[500] text-gray-400">Software Engineer</div>
                     </div>
                     <div className="flex gap-x-4 my-3">
