@@ -5,7 +5,6 @@ export default function Page(){
   return <>
     <main className="w-full">
       <HomeTop/>
-      <div>Hello Limon</div>
     </main>
   </>
 }
