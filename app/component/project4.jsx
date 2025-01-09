@@ -1,14 +1,15 @@
+"use client"
 import Image from "next/image";
-
 import prothom from "@/public/project/prothom.png";
 import { LanguageOutlined } from "@mui/icons-material";
+import {motion} from "motion/react"
 import Link from "next/link";
 export default function Project4(){
     return <div className="grid grid-cols-12 items-center">
         
         <div className="drop-shadow-lg col-span-7 col-start-1 col-end-8 row-start-1 row-end-1 z-50 bg-white rounded-md">
             <div className="p-4">
-                <div>02</div>
+                <div>06</div>
                 <div className="my-3 text-[18px]" style={{"letterSpacing":"2px"}}>Prothom Surjo Foundation</div>
                 <div className="text-[16px] font-[500] my-3" style={{"word-spacing":"5px"}}>Prothom Surjo Foundation is a nonprofit voluntary organization founded with the aims to help deprived street children by serving fundamental rights. The activity of the organization assists children to become a true human being.</div>
                 <div className="grid grid-cols-4 gap-2">
@@ -22,8 +23,17 @@ export default function Project4(){
                 </div>
             </div>
         </div>
-        <div className="col-span-8 row-start-1 row-end-1 col-start-4 col-end-12 relative">
-           <Image width={1000} height={700} className="backdrop-blur-md  bg-opacity-20 w-full h-[420px]" src={prothom} alt="Project one"/> 
-        </div>
+        <motion.div 
+             initial={{ scale: 0.9,}}
+             animate={{ scale: 1,}}
+             transition={{
+                 duration: 5,
+                 ease: "easeInOut",
+                 repeat: Infinity,
+                 repeatType: "reverse"
+             }}
+            className="col-span-8 row-start-1 row-end-1 col-start-4 col-end-12 relative">
+           <Image width={1000} height={700} className="backdrop-blur-md  bg-opacity-20 w-full h-[420px] rounded-md" src={prothom} alt="Project one"/> 
+        </motion.div>
     </div>
 }

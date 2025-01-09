@@ -3,6 +3,8 @@ import HomeTop from "./component/home1";
 import Project1 from "./component/project1";
 import Project3 from "./component/project3";
 import Project4 from "./component/project4";
+import Project5 from "./component/project5";
+import Project6 from "./component/project6";
 import Project2 from "./component/projext2";
 
 export default function Page(){
@@ -13,6 +15,8 @@ export default function Page(){
         <div className="flex justify-center">
           <h1 className="text-center text-[20px] font-[600] border-b-2">Projects</h1>
         </div>
+        <Project5/>
+        <Project6/>
         <Project1/>
         <Project2/>
         <Project3/>
