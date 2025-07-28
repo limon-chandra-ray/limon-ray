@@ -10,12 +10,13 @@ export default function HomeTop(){
                 <div className="pl-5">
                     <div>
                         <div className="text-[4rem] font-bold text-black">I&lsquo;m Limon</div>
-                        <div className="text-[1.5rem] font-[500] text-gray-400">Software Engineer</div>
+                        <div className="text-[1.5rem] font-[500] text-gray-400">Python Developer</div>
+                        <p className="text-[14px] text-black">A passionate Full Stack Developer specializing in Python, Django, FastAPI, React.js, Next.js, PostgreSQL, and Redis. I love building scalable web applications and solving real-world problems with clean, efficient code.</p>
                     </div>
-                    <div className="flex gap-x-4 my-3">
+                    {/* <div className="flex gap-x-4 my-3">
                         <button type="button" className="px-4 py-2 bg-[#3b8f96] hover:bg-[#4ab8c2] text-[16px] text-[#e8e8e8] font-[600] rounded-sm uppercase tracking-widest ">Get Resume</button>
                         <button type="button" className="px-4 py-2 bg-[#3b8f96] hover:bg-[#4ab8c2] text-[16px] text-[#e8e8e8] font-[600] rounded-sm uppercase tracking-widest ">contact Me</button>
-                    </div>
+                    </div> */}
                     <div className="flex gap-x-2 mt-4">
                         <Link href="https://www.facebook.com/limon.limon.9634340/" target="_blank">
                             <Facebook fontSize="large" className="w-[40px] h-[40px] hover:text-[#0b48cc]"/>
