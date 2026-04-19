@@ -16,17 +16,19 @@ export default function Project2(){
                 <div>04</div>
                 <div className="my-3 text-[18px]" style={{"letterSpacing":"2px"}}>Porikkha Online</div>
                 <div className="text-[16px] font-[500] my-3" style={{"word-spacing":"5px"}}>This Platform is Educational Category base. this Platform use HSC, Admission and Job Preparation Student. User prepared and practice MCQ questions, participate teacher and daily weekly exams. he checks her upgrade charts.</div>
-                <div className="grid grid-cols-4 gap-2">
-                    <span className="px-2 py-1 text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Django Framework</span>
-                    <span className="px-2 py-1 text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Django rest framework</span>
-                    <span className="px-2 py-1 text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">PostgreSQL</span>
-                    <span className="px-2 py-1 text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Redis</span>
-                    <span className="px-2 py-1 text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Bootstarp</span>
-                    <span className="px-2 py-1 text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Mobile App</span>
-                    <span className="px-2 py-1 text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Vps server</span>
+                <div className="flex flex-wrap gap-2 my-4">
+                    <span className="px-3 py-1 bg-cyan-500 text-white rounded-full text-[12px] font-[600]">Django</span>
+                    <span className="px-3 py-1 bg-cyan-500 text-white rounded-full text-[12px] font-[600]">DRF</span>
+                    <span className="px-3 py-1 bg-purple-500 text-white rounded-full text-[12px] font-[600]">PostgreSQL</span>
+                    <span className="px-3 py-1 bg-red-500 text-white rounded-full text-[12px] font-[600]">Redis</span>
+                    <span className="px-3 py-1 bg-yellow-600 text-white rounded-full text-[12px] font-[600]">Bootstrap</span>
+                    <span className="px-3 py-1 bg-indigo-600 text-white rounded-full text-[12px] font-[600]">Mobile</span>
                 </div>
-                <div>
-                    <Link href="/"><LanguageOutlined/></Link>
+                <div className="mt-6">
+                    <a href="#" className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg font-[600] transition">
+                        <LanguageOutlined className="text-[18px]" />
+                        Visit Site
+                    </a>
                 </div>
             </div>
         </motion.div>

@@ -1,63 +1,42 @@
 "use client"
 import Image from "next/image";
-
 import BoiBazar from "@/public/project/boi-bazar.png";
-import { DomainAddRounded, LanguageOutlined } from "@mui/icons-material";
+import { LanguageOutlined } from "@mui/icons-material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { motion } from "motion/react";
 import Link from "next/link";
 export default function Project6(){
-    return <div className="grid grid-cols-12 items-center">
-        
+    return <div className="grid grid-cols-12 items-center gap-6">
         <motion.div 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="drop-shadow-lg col-span-7 col-start-1 col-end-8 row-start-1 row-end-1 z-50 bg-white rounded-md">
-            <div className="p-4">
-                <div>02</div>
-                <div className="my-3 text-[18px]" style={{"letterSpacing":"2px"}}>Boi Bazar Library</div>
-                <div className="text-[16px] font-[500] my-3" style={{"word-spacing":"5px"}}>Boi Bazar is a secure library management system with categorized book selection, a comprehensive database, and secure routing for efficient book management. It allows students to browse books by categories or genres and maintains a well-organized database to store information about all books.</div>
-                <div className="grid grid-cols-4 gap-2">
-                    <motion.span
-                        whileHover={{ scale: 1.1 }}
-                        onHoverStart={event => {}}
-                        onHoverEnd={event => {}}
-                        className="px-2 py-1 cursor-pointer text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">React Js</motion.span>
-                    <motion.span
-                        whileHover={{ scale: 1.1 }}
-                        onHoverStart={event => {}}
-                        onHoverEnd={event => {}}
-                        className="px-2 py-1 cursor-pointer text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Node JS</motion.span>
-                    <motion.span 
-                        whileHover={{ scale: 1.1 }}
-                        onHoverStart={event => {}}
-                        onHoverEnd={event => {}}
-                        className="px-2 py-1 cursor-pointer text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Express JS</motion.span>
-                    <motion.span 
-                        whileHover={{ scale: 1.1 }}
-                        onHoverStart={event => {}}
-                        onHoverEnd={event => {}}
-                        className="px-2 py-1 cursor-pointer text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Tailwind CSS</motion.span>
-                    <motion.span 
-                        whileHover={{ scale: 1.1 }}
-                        onHoverStart={event => {}}
-                        onHoverEnd={event => {}}
-                        className="px-2 py-1 cursor-pointer text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">firebase</motion.span>
-                    <motion.span 
-                        whileHover={{ scale: 1.1 }}
-                        onHoverStart={event => {}}
-                        onHoverEnd={event => {}}
-                        className="px-2 py-1 cursor-pointer text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Mongo DB</motion.span>
-                </div>
-                <div className="py-2 flex justify-between">
-                    <div className="flex gap-x-3">
-                        <Link href={`https://github.com/limon-chandra-ray/boi-bazar-library-app`} target="_blank" rel="noopener noreferrer" className="flex items-center bg-slate-400 text-white py-1 px-2 rounded-md hover:bg-slate-600"><GitHubIcon/> Frontend</Link>
-                        <Link href={`https://github.com/limon-chandra-ray/boi-bazar-library-server`} target="_blank" rel="noopener noreferrer" className="flex items-center bg-slate-400 text-white py-1 px-2 rounded-md hover:bg-slate-600"><GitHubIcon/> Backend</Link>
-                    </div>
-                    <Link href={`https://boi-bazar-library-app.vercel.app/`} target="_blank" rel="noopener noreferrer" className="flex items-center bg-blue-600 hover:bg-blue-700 text-white py-1 px-2 rounded-md"><LanguageOutlined/> Live Demo</Link>
-                    
-                </div>
+            className="col-span-6 md:col-span-7 row-start-1 row-end-1 col-start-1 md:col-end-8 z-50 bg-gradient-to-br from-cyan-50 to-teal-50 border-2 border-teal-300 rounded-xl p-6 md:p-8 shadow-xl">
+            <span className="text-teal-600 font-bold text-[14px]">Project 02</span>
+            <h3 className="text-[24px] font-bold text-black mt-2">Boi Bazar Library</h3>
+            <p className="text-gray-700 text-[14px] leading-relaxed my-4">
+                A comprehensive library management system with secure authentication, categorized book browsing, and detailed book information. Features include category filtering, user-friendly interface, and efficient database management for seamless book discovery.
+            </p>
+            <div className="flex flex-wrap gap-2 my-4">
+                <span className="px-3 py-1 bg-blue-500 text-white rounded-full text-[12px] font-[600]">React.js</span>
+                <span className="px-3 py-1 bg-green-600 text-white rounded-full text-[12px] font-[600]">Node.js</span>
+                <span className="px-3 py-1 bg-yellow-600 text-white rounded-full text-[12px] font-[600]">Express</span>
+                <span className="px-3 py-1 bg-teal-600 text-white rounded-full text-[12px] font-[600]">MongoDB</span>
+                <span className="px-3 py-1 bg-orange-500 text-white rounded-full text-[12px] font-[600]">Firebase</span>
+            </div>
+            <div className="flex flex-wrap gap-2 mt-6">
+                <a href={`https://boi-bazar-library-app.vercel.app/`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white py-2 px-4 rounded-lg font-[600] transition">
+                    <LanguageOutlined className="text-[18px]" />
+                    Live Demo
+                </a>
+                <a href={`https://github.com/limon-chandra-ray/boi-bazar-library-app`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-slate-700 hover:bg-slate-800 text-white py-2 px-4 rounded-lg font-[600] transition">
+                    <GitHubIcon className="text-[18px]" />
+                    Frontend
+                </a>
+                <a href={`https://github.com/limon-chandra-ray/boi-bazar-library-server`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-slate-700 hover:bg-slate-800 text-white py-2 px-4 rounded-lg font-[600] transition">
+                    <GitHubIcon className="text-[18px]" />
+                    Backend
+                </a>
             </div>
         </motion.div>
         <motion.div 
@@ -69,8 +48,8 @@ export default function Project6(){
                 repeat: Infinity,
                 repeatType: "reverse"
             }}
-            className="col-span-8 row-start-1 row-end-1 col-start-4 col-end-12 relative">
-           <Image width={1000} height={700} className="backdrop-blur-md  bg-opacity-20 w-full h-[420px] rounded-md" src={BoiBazar} alt="Project one"/> 
+            className="col-span-6 md:col-span-8 row-start-1 md:row-end-1 col-start-1 md:col-start-4 col-end-12 relative">
+           <Image width={1000} height={700} className="w-full h-[400px] rounded-xl object-cover shadow-2xl" src={BoiBazar} alt="Boi Bazar Library"/> 
         </motion.div>
     </div>
 }

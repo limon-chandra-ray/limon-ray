@@ -5,24 +5,7 @@ import { LanguageOutlined } from "@mui/icons-material";
 import {motion} from "motion/react"
 import Link from "next/link";
 export default function Project4(){
-    return <div className="grid grid-cols-12 items-center">
-        
-        <div className="drop-shadow-lg col-span-7 col-start-1 col-end-8 row-start-1 row-end-1 z-50 bg-white rounded-md">
-            <div className="p-4">
-                <div>06</div>
-                <div className="my-3 text-[18px]" style={{"letterSpacing":"2px"}}>Prothom Surjo Foundation</div>
-                <div className="text-[16px] font-[500] my-3" style={{"word-spacing":"5px"}}>Prothom Surjo Foundation is a nonprofit voluntary organization founded with the aims to help deprived street children by serving fundamental rights. The activity of the organization assists children to become a true human being.</div>
-                <div className="grid grid-cols-4 gap-2">
-                    <span className="px-2 py-1 text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Django Framework</span>
-                    <span className="px-2 py-1 text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">MYSQL</span>
-                    <span className="px-2 py-1 text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Bootstarp</span>
-                    <span className="px-2 py-1 text-center bg-green-300 font-[600] text-[16px] tracking-wider rounded-sm text-cyan-50">Share server</span>
-                </div>
-                <div>
-                    <Link href="/"><LanguageOutlined/></Link>
-                </div>
-            </div>
-        </div>
+    return <div className="grid grid-cols-12 items-center gap-6">
         <motion.div 
              initial={{ scale: 0.9,}}
              animate={{ scale: 1,}}
@@ -32,8 +15,30 @@ export default function Project4(){
                  repeat: Infinity,
                  repeatType: "reverse"
              }}
-            className="col-span-8 row-start-1 row-end-1 col-start-4 col-end-12 relative">
-           <Image width={1000} height={700} className="backdrop-blur-md  bg-opacity-20 w-full h-[420px] rounded-md" src={prothom} alt="Project one"/> 
+            className="col-span-6 md:col-span-8 row-start-1 md:row-end-1 col-start-1 md:col-end-8 relative">
+           <Image width={1000} height={700} className="w-full h-[400px] rounded-xl object-cover shadow-2xl" src={prothom} alt="Prothom Surjo Foundation"/> 
+        </motion.div>
+        <motion.div 
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        className="col-span-6 md:col-span-7 col-start-1 md:col-start-5 row-start-1 md:row-end-1 z-50 bg-gradient-to-br from-orange-50 to-red-50 border-2 border-orange-300 rounded-xl p-6 md:p-8 shadow-xl">
+            <span className="text-orange-600 font-bold text-[14px]">Project 06</span>
+            <h3 className="text-[24px] font-bold text-black mt-2">Prothom Surjo Foundation</h3>
+            <p className="text-gray-700 text-[14px] leading-relaxed my-4">
+                A nonprofit organization website dedicated to helping deprived street children. The platform showcases their mission, programs, and impact while enabling donors and volunteers to support their humanitarian cause.
+            </p>
+            <div className="flex flex-wrap gap-2 my-4">
+                <span className="px-3 py-1 bg-orange-500 text-white rounded-full text-[12px] font-[600]">Django</span>
+                <span className="px-3 py-1 bg-red-500 text-white rounded-full text-[12px] font-[600]">MySQL</span>
+                <span className="px-3 py-1 bg-yellow-500 text-white rounded-full text-[12px] font-[600]">Bootstrap</span>
+            </div>
+            <div className="flex gap-2 mt-6">
+                <a href="#" className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-lg font-[600] transition">
+                    <LanguageOutlined className="text-[18px]" />
+                    Learn More
+                </a>
+            </div>
         </motion.div>
     </div>
 }
