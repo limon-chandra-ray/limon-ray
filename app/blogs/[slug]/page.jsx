@@ -14,7 +14,7 @@ export default function BlogDetailPage({ params }) {
         <div className="mx-auto max-w-4xl px-4 md:px-0 py-12">
           <div className="text-center">
             <h1 className="text-[48px] font-[700] text-black mb-4">Blog Not Found</h1>
-            <p className="text-gray-600 text-[16px] mb-6">The blog post you're looking for doesn't exist.</p>
+            <p className="text-gray-600 text-[16px] mb-6">The blog post you&apos;re looking for doesn&apos;t exist.</p>
             <Link href="/blogs">
               <motion.button 
                 whileHover={{ scale: 1.05 }}

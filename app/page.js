@@ -134,7 +134,7 @@ export default function Page(){
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-[36px] font-bold mb-4">Ready to Start Your Next Project?</h2>
           <p className="text-[18px] opacity-90 mb-8">
-            Let's build something amazing together. Get in touch to discuss your project requirements.
+            Let&apos;s build something amazing together. Get in touch to discuss your project requirements.
           </p>
           <a href="/contact" className="inline-block bg-white text-cyan-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 text-[16px]">
             Get In Touch

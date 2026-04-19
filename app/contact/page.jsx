@@ -13,7 +13,7 @@ export default function page(){
                 className="mb-12 text-center"
             >
                 <h1 className="text-[48px] font-[700] text-black mb-4">Get In Touch</h1>
-                <p className="text-gray-600 text-[18px] max-w-2xl mx-auto">Have a question or want to collaborate? I'd love to hear from you. Reach out through the form or contact information below.</p>
+                <p className="text-gray-600 text-[18px] max-w-2xl mx-auto">Have a question or want to collaborate? I&apos;d love to hear from you. Reach out through the form or contact information below.</p>
             </motion.div>
 
             {/* Content Grid */}
@@ -70,7 +70,7 @@ export default function page(){
                         </div>
                         <h3 className="text-[18px] font-[600] text-black">Location</h3>
                     </div>
-                    <p className="text-gray-600 text-[14px] mb-2">Where I'm based</p>
+                    <p className="text-gray-600 text-[14px] mb-2">Where I&apos;m based</p>
                     <p className="text-purple-600 font-[600]">
                         Bangladesh
                     </p>

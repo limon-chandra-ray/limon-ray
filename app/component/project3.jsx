@@ -14,7 +14,7 @@ export default function Project3(){
             <span className="text-purple-600 font-bold text-[14px]">Project 05</span>
             <h3 className="text-[24px] font-bold text-black mt-2">BSMRSTU IR Department</h3>
             <p className="text-gray-700 text-[14px] leading-relaxed my-4">
-                A collaborative platform for BSMRSTU's IR department where students can submit research topics, engage in discussions, and view community contributions. Features interactive comments, reactions, and event management for seamless information sharing.
+                A collaborative platform for BSMRSTU&apos;s IR department where students can submit research topics, engage in discussions, and view community contributions. Features interactive comments, reactions, and event management for seamless information sharing.
             </p>
             <div className="flex flex-wrap gap-2 my-4">
                 <span className="px-3 py-1 bg-purple-500 text-white rounded-full text-[12px] font-[600]">Django</span>
